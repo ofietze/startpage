@@ -1,0 +1,33 @@
+* {
+	padding: 0;
+	margin: 0 auto;
+	font-family:  'Helvetica';
+}
+
+body {
+	width:100%;
+	background-color: #2B292E;
+	color: #ccc;
+	font-family:  'Raleway';
+}
+
+input {
+	width: 50%;
+	padding: 1%;
+	font-size: 42px;
+	color: #fff;
+	margin: 5% 0 0 25%;
+	margin-bottom: 20px;
+	background-color: #aaa;
+	border: 0px;
+	border-radius: 10px;
+}
+img{
+	width: 100%;
+	height: 50%;
+}
+#script{
+	padding: 5px;
+	font-size: 20px;
+	margin: 0 25%;
+}
