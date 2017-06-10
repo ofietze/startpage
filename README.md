@@ -1,7 +1,7 @@
 Startpage
 =======================
 
-** Get to your websites faster.
+**Get to your websites faster.
 Simply type "y", select the autocomplete "!yt" and the duckduckgo !bang for youtube is called.
 Currently supported websites:
 - youtube
