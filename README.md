@@ -13,6 +13,7 @@ Currently supported websites:
 - soundcloud
 - wolframalpha
 
-This technically works with all available duckduckgo !bangs.
+This technically would work with all available duckduckgo !bangs.
 
 Oh, and there is more. You get a random encouragement, insult or other message at the start.
+Try it out here: https://ofietze.github.io/startpage/
