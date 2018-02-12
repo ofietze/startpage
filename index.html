@@ -60,7 +60,7 @@
     var time = [hours, minutes, seconds].join(':')
         // a cleaner way than string concatenation
     var date = [now.getDate(),
-                now.getMonth(),
+                now.getMonth() + 1,
                 now.getFullYear()].join('.')
 
     // set the content of the element with the ID time to the formatted string
