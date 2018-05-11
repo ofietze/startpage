@@ -9,31 +9,23 @@
   <link rel="icon" href="favicon.ico" type="image/x-icon">
 </head>
   <body>
-		<form method="" action="https://duckduckgo.com">
-				<input type="text" name="q" id ="search" list="datalist1" autofocus placeholder="Search..."> <br>
-				<datalist id="datalist1">
-					<option value="!yt">
-					<option value="!amde">
-					<option value="!reddit">
-					<option value="!apple">
-					<option value="!so">
-					<option value="!gh">
-					<option value="!soundcloud">
-					<option value="!wa">
-				</datalist>
-		</form>
-    </body>
-		<div id="script">
-			<script language="javascript">
-			var r_text = new Array ();
-			r_text[0] = "Was guckst du?!";
-			r_text[1] = "42";
-			r_text[2] = "Hallo, du Lappen!";
-			r_text[3] = "Du siehst heute aber bescheiden aus.";
-			r_text[4] = "Auf an die Arbeit!";
-
-			var i = Math.floor(r_text.length * Math.random());
-			document.write(r_text[i]);
-			</script>
-		</div>
+			<h1>Moin.</h1>
+			<div id="message"></div>
+				<div class="webflow-style-input">
+				<form method="" action="https://duckduckgo.com">
+						<input type="text" name="q" id ="search" list="datalist1" autofocus placeholder="Search..."> <br>
+						<datalist id="datalist1">
+							<option value="!yt">
+							<option value="!amde">
+							<option value="!reddit">
+							<option value="!apple">
+							<option value="!so">
+							<option value="!gh">
+							<option value="!soundcloud">
+							<option value="!wa">
+						</datalist>
+				</form>
+			</div>
+  </body>
+	<script src="message.js"></script>
 </html>
