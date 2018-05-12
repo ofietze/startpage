@@ -1,7 +1,7 @@
 * {
     padding: 0;
     margin: 0 auto;
-    font-family: 'Helvetica', sans-serif;
+    font-family: 'Arial', sans-serif;
 }
 
 html {
@@ -10,8 +10,8 @@ html {
 }
 
 body {
-    color: #ccc;
-    background: #2B292E radial-gradient(circle at 0% 0%, #373b52, #252736 51%, #1d1e26);
+    color: #ccc7c7;
+    background: #252525;
     box-sizing: border-box;
 }
 
@@ -44,7 +44,7 @@ h1 {
     margin: 2% auto 0;
     border-radius: 2px;
     padding: 1.4rem 2rem 1.6rem;
-    background: rgba(57, 63, 84, 0.8);
+    background: #000000;
 }
 
 body:after {
@@ -58,7 +58,7 @@ body:after {
     border-bottom-left-radius: 2px;
     border-bottom-right-radius: 2px;
     background-position: 0% 0%;
-    background: linear-gradient(to right, #B294FF, #57E6E6, #FEFFB8, #57E6E6, #B294FF, #57E6E6);
+    background: linear-gradient(to right,  #4d163d, #840037, #BD0034, #FDB731, #BD0034,#4D163D, #840037);
     background-size: 500% auto;
     -webkit-animation: gradient 3s linear infinite;
     animation: gradient 3s linear infinite;
@@ -77,7 +77,7 @@ body:after {
     border-bottom-left-radius: 2px;
     border-bottom-right-radius: 2px;
     background-position: 0% 0%;
-    background: linear-gradient(to right, #B294FF, #57E6E6, #FEFFB8, #57E6E6, #B294FF, #57E6E6);
+    background: linear-gradient(to right, #4D163D, #840037, #BD0034, #FDB731, #BD0034,#4D163D, #840037);
     background-size: 500% auto;
     -webkit-animation: gradient 3s linear infinite;
     animation: gradient 3s linear infinite;
@@ -91,10 +91,56 @@ body:after {
     width: 100%;
     font-size: 42px;
     flex-grow: 1;
-    color: #BFD2FF;
+    color: #fff;
     font-size: 1.8rem;
     line-height: 2.4rem;
     vertical-align: middle;
+}
+
+svg {
+    display: block;
+    font: 10.5em 'Montserrat';
+    width: 960px;
+    height: 300px;
+    margin: 0 auto;
+}
+
+.text-copy {
+    fill: none;
+    stroke: white;
+    stroke-dasharray: 6% 29%;
+    stroke-width: 5px;
+    stroke-dashoffset: 0%;
+    animation: stroke-offset 5.5s infinite linear;
+}
+
+.text-copy:nth-child(1){
+    stroke: #4D163D;
+    animation-delay: -1s;
+}
+
+.text-copy:nth-child(2){
+    stroke: #840037;
+    animation-delay: -2s;
+}
+
+.text-copy:nth-child(3){
+    stroke: #BD0034;
+    animation-delay: -3s;
+}
+
+.text-copy:nth-child(4){
+    stroke: #BD0034;
+    animation-delay: -4s;
+}
+
+.text-copy:nth-child(5){
+    stroke: #FDB731;
+    animation-delay: -5s;
+}
+
+@keyframes stroke-offset{
+    100% {stroke-dashoffset: -35%;}
 }
 
 @-webkit-keyframes gradient {

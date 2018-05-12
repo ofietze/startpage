@@ -6,4 +6,4 @@ r_text[3] = "Du siehst heute aber bescheiden aus.";
 r_text[4] = "Auf an die Arbeit!";
 
 var i = Math.floor(r_text.length * Math.random());
-document.getElementById('message').innerHTML = r_text[i];
+document.getElementById('message').innerHTML = "idiot" + r_text[i].concat("blub");
