@@ -23,14 +23,6 @@ h1 {
     margin: 15% auto 0;
 }
 
-#message {
-    text-align: center;
-    padding: 5px;
-    font-size: 28px;
-    font-weight: 200;
-    margin: 0% auto 0%;
-}
-
 *, *:before, *:after {
     box-sizing: inherit;
 }
