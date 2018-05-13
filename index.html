@@ -6,70 +6,34 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 	<link href="style.css" type="text/css" rel="stylesheet"/>
+	<link href="clock.css" type="text/css" rel="stylesheet"/>
   <link rel="icon" href="favicon.ico" type="image/x-icon">
 </head>
   <body>
-		<form method="" action="https://duckduckgo.com">
-				<input type="text" name="q" id ="search" list="datalist1" autofocus placeholder="Search..."> <br>
-				<datalist id="datalist1">
-					<option value="!yt">
-					<option value="!twitch">
-					<option value="!amde">
-					<option value="!reddit">
-					<option value="!apple">
-					<option value="!so">
-					<option value="!gh">
-					<option value="!soundcloud">
-					<option value="!wa">
-				</datalist>
-		</form>
-		<div id ="message"></div>
-		<div id = 'time'></div>
-		<div id = 'day'></div>
-		<div id = 'date'></div>
-    </body>
+			<h1>Moin.</h1>
+			<div id="leftTime" class="hour"></div>
+			<div id="leftTime" class="min"></div>
+			<div id="leftTime" class="ampm"></div>
+			<div id="leftTime" class="cover">
+				<div class="sec"></div>
+			</div>
+
+				<div class="webflow-style-input">
+				<form method="" action="https://duckduckgo.com">
+					<input type="text" name="q" id ="search" list="datalist1" autofocus placeholder="Search..."> <br>
+						<datalist id="datalist1">
+							<option value="!yt">
+							<option value="!amde">
+							<option value="!reddit">
+							<option value="!apple">
+							<option value="!so">
+							<option value="!gh">
+							<option value="!soundcloud">
+							<option value="!wa">
+						</datalist>
+				</form>
+			</div>
+  </body>
+	<script src="message.js"></script>
+	<script src="clock.js"></script>
 </html>
-
-<script language="javascript">
-	var r_text = new Array ();
-	r_text[0] = "Was guckst du?!";
-	r_text[1] = "42";
-	r_text[2] = "Hallo, du Lappen!";
-	r_text[3] = "Du siehst heute aber bescheiden aus.";
-	r_text[4] = "Auf an die Arbeit!";
-
-	var i = Math.floor(r_text.length * Math.random());
-	document.getElementById("message").innerHTML = r_text[i];
-
-	function updateClock() {
-		var weekdays = new Array();
-		weekdays[0] = "Sonntag"
-		weekdays[1] = "Montag"
-		weekdays[2] = "Dienstag"
-		weekdays[3] = "Mittwoch"
-		weekdays[4] = "Donnerstag"
-		weekdays[5] = "Freitag"
-		weekdays[6] = "Samstag"
-
-    var now = new Date()
-		// format with leading 0 if number below 10 e.g. 1 -> 01
-		var hours = (now.getHours() < 10) ? [0, now.getHours()].join("") : now.getHours();
-		var minutes = (now.getMinutes() < 10) ? [0, now.getMinutes()].join("") : now.getMinutes();
-		var seconds = (now.getSeconds() < 10) ? [0, now.getSeconds()].join("") : now.getSeconds();
-
-    var time = [hours, minutes, seconds].join(':')
-        // a cleaner way than string concatenation
-    var date = [now.getDate(),
-                now.getMonth() + 1,
-                now.getFullYear()].join('.')
-
-    // set the content of the element with the ID time to the formatted string
-		document.getElementById('time').innerHTML = time
-		document.getElementById('day').innerHTML = weekdays[now.getDay()]
-    document.getElementById('date').innerHTML = date
-
-    // call this function again in 1000ms
-    setTimeout(updateClock, 1000);
-}
-updateClock(); // initial call
-</script>
