@@ -31,34 +31,27 @@ h1 {
     position: relative;
     display: flex;
     flex-direction: row;
-    width: 100%;
-    max-width: 400px;
+    width:50%;
     margin: 2% auto 0;
     border-radius: 2px;
     padding: 1.4rem 2rem 1.6rem;
     background: #000000;
 }
 
-body:after {
-    content: "";
-    position: absolute;
-    left: 0px;
-    right: 0px;
-    bottom: 0px;
-    z-index: 999;
-    height: 5px;
-    border-bottom-left-radius: 2px;
-    border-bottom-right-radius: 2px;
-    background-position: 0% 0%;
-    background: linear-gradient(to right,  #4d163d, #840037, #BD0034, #FDB731, #BD0034,#4D163D, #840037);
-    background-size: 500% auto;
-    -webkit-animation: gradient 3s linear infinite;
-    animation: gradient 3s linear infinite;
-
+.webflow-style-input input {
+    margin: 0;
+    min-width: 600px;
+    border-style: none;
+    background: transparent;
+    outline: none;
+    color: #fff;
+    font-size: 1.8rem;
+    line-height: 2.4rem;
+    vertical-align: middle;
+    text-align: center;
 }
 
-
-.webflow-style-input:after {
+.webflow-style-input:after, body:after{
     content: "";
     position: absolute;
     left: 0px;
@@ -71,22 +64,8 @@ body:after {
     background-position: 0% 0%;
     background: linear-gradient(to right, #4D163D, #840037, #BD0034, #FDB731, #BD0034,#4D163D, #840037);
     background-size: 500% auto;
-    -webkit-animation: gradient 3s linear infinite;
-    animation: gradient 3s linear infinite;
-}
-
-.webflow-style-input input {
-    margin: 0;
-    border-style: none;
-    background: transparent;
-    outline: none;
-    width: 100%;
-    font-size: 42px;
-    flex-grow: 1;
-    color: #fff;
-    font-size: 1.8rem;
-    line-height: 2.4rem;
-    vertical-align: middle;
+    -webkit-animation: gradient 10s linear infinite;
+    animation: gradient 10s linear infinite;
 }
 
 svg {
