@@ -55,8 +55,6 @@ h1 {
 @media all and (min-width: 500px) {  body,input  {   font-size:1.5em;  } }
 @media all and (min-width: 600px) {  body,input  {   font-size:1.7em;  } }
 
-
-
 @-webkit-keyframes gradient {
     0% { background-position: 0 0; }
     100% { background-position: 100% 0; }
