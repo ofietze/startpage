@@ -1,7 +1,6 @@
 * {
     padding: 0;
     margin: 0 auto;
-    font-family: 'Montserrat', sans-serif;
 }
 
 html {
@@ -10,12 +9,15 @@ html {
 }
 
 body {
+    display: flex;
+    flex-direction: column;
     color: #ccc7c7;
     background: #252525;
     box-sizing: border-box;
 }
 
 h1 {
+    font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     font-size: 100px;
     text-align: center;
@@ -28,20 +30,17 @@ h1 {
 }
 
 .webflow-style-input {
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    width:50%;
-    margin: 2% auto 0;
+    font-family: 'Montserrat', sans-serif;
+    margin: 3% auto;
     border-radius: 2px;
     padding: 1.4rem 2rem 1.6rem;
     background: #000000;
 }
 
 .webflow-style-input input {
-    margin: 0;
     border-style: none;
     background: transparent;
+    min-width: 400px;
     outline: none;
     color: #fff;
     font-size: 1.8rem;
@@ -50,22 +49,7 @@ h1 {
     text-align: center;
 }
 
-.webflow-style-input:after{
-    content: "";
-    position: absolute;
-    left: 0px;
-    right: 0px;
-    bottom: 0px;
-    z-index: 999;
-    height: 5px;
-    border-bottom-left-radius: 2px;
-    border-bottom-right-radius: 2px;
-    background-position: 0% 0%;
-    background: linear-gradient(to right, #4D163D, #840037, #BD0034, #FDB731, #BD0034,#4D163D, #840037);
-    background-size: 500% auto;
-    -webkit-animation: gradient 10s linear infinite;
-    animation: gradient 10s linear infinite;
-}
+
 
 @-webkit-keyframes gradient {
     0% { background-position: 0 0; }

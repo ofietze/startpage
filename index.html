@@ -5,6 +5,7 @@
 	<meta charset="utf-8"/>
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=OverpassMono:700" />
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:700" />
 	<link href="style.css" type="text/css" rel="stylesheet"/>
 	<link href="clock.css" type="text/css" rel="stylesheet"/>
@@ -12,29 +13,91 @@
 </head>
   <body>
 			<h1>Moin.</h1>
-			<div id="leftTime" class="hour"></div>
-			<div id="leftTime" class="min"></div>
-			<div id="leftTime" class="ampm"></div>
-			<div id="leftTime" class="cover">
-				<div class="sec"></div>
-			</div>
+			<div class="webflow-style-input">
+			<form method="" action="https://duckduckgo.com">
+				<input type="text" name="q" id ="search" list="datalist1" autofocus placeholder="Search..."> <br>
+					<datalist id="datalist1">
+						<option value="!yt">
+						<option value="!amde">
+						<option value="!reddit">
+						<option value="!apple">
+						<option value="!so">
+						<option value="!gh">
+						<option value="!soundcloud">
+						<option value="!wa">
+					</datalist>
+			</form>
+		</div>
 
-				<div class="webflow-style-input">
-				<form method="" action="https://duckduckgo.com">
-					<input type="text" name="q" id ="search" list="datalist1" autofocus placeholder="Search..."> <br>
-						<datalist id="datalist1">
-							<option value="!yt">
-							<option value="!amde">
-							<option value="!reddit">
-							<option value="!apple">
-							<option value="!so">
-							<option value="!gh">
-							<option value="!soundcloud">
-							<option value="!wa">
-						</datalist>
-				</form>
-			</div>
+			<div id="clock-background">
+				  <div id="number-container">
+				    <div id="clock"></div>
+				  </div>
+				  <div id="days">
+				    <ul>
+				      <li id="wd0">Mon</li>
+				      <li id="wd1">Tue</li>
+				      <li id="wd2">Wed</li>
+				      <li id="wd3">Thur</li>
+				      <li id="wd4">Fri</li>
+				      <li id="wd5">Sat</li>
+				      <li id="wd6">Sun</li>
+				    </ul>
+				  </div>
+					<div id="daysOfMonth">
+				    <ul>
+				      <li id="d0">01</li>
+				      <li id="d1">02</li>
+				      <li id="d2">03</li>
+				      <li id="d3">04</li>
+				      <li id="d4">05</li>
+				      <li id="d5">06</li>
+				      <li id="d6">07</li>
+							<li id="d7">08</li>
+						 	<li id="d8">09</li>
+							<li id="d9">10</li>
+				      <li id="d10">11</li>
+				      <li id="d11">12</li>
+				      <li id="d12">13</li>
+				      <li id="d13">14</li>
+				      <li id="d14">15</li>
+				      <li id="d15">16</li>
+							<li id="d16">17</li>
+						 	<li id="d17">18</li>
+							<li id="d18">19</li>
+				      <li id="d19">20</li>
+				      <li id="d20">21</li>
+				      <li id="d21">22</li>
+				      <li id="d22">23</li>
+				      <li id="d23">24</li>
+				      <li id="d24">25</li>
+							<li id="d25">26</li>
+						 	<li id="d26">27</li>
+							<li id="d27">28</li>
+				      <li id="d28">29</li>
+				      <li id="d29">30</li>
+				      <li id="d30">31</li>
+				    </ul>
+				  </div>
+					<div id="months">
+				    <ul>
+				      <li id="m0">Januar</li>
+				      <li id="m1">Februar</li>
+				      <li id="m2">März</li>
+				      <li id="m3">April</li>
+				      <li id="m4">Mai</li>
+				      <li id="m5">Juni</li>
+				      <li id="m6">Juli</li>
+							<li id="m7">August</li>
+							<li id="m8">September</li>
+							<li id="m9">Oktober</li>
+							<li id="m10">November</li>
+							<li id="m11">Dezember</li>
+				    </ul>
+				  </div>
+				</div>
   </body>
 	<script src="message.js"></script>
 	<script src="clock.js"></script>
+	<script src="bg.js"></script>
 </html>
