@@ -1,9 +1,8 @@
 #clock-background {
+  margin-top: 2%;
+  height: 100%;
   background-color: #11151D;
   padding: 20px;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  border-radius: 13px;
 }
 
 #number-container {
@@ -12,7 +11,7 @@
 
 #clock {
   font-family: 'Montserrat', sans-serif;
-  font-size: 68px;
+  font-size: 3em;
   letter-spacing: 5px;
   color: #ccc;
   text-align: center;
