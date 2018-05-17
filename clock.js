@@ -19,7 +19,7 @@ function startTime() {
 
   // set day of month
   var dayOfMonth = today.getDate();
-  document.getElementById('d'+ dayOfMonth).className = "today";
+  document.getElementById('d'+ (dayOfMonth - 1)).className = "today";
 
   //set Month
   var month = today.getMonth();
