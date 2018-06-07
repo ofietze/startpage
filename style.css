@@ -9,6 +9,7 @@ html {
 }
 
 body {
+    font-family: 'Montserrat', sans-serif;
     height: 100%;
     color: #ccc7c7;
     background: #252525;
@@ -16,7 +17,6 @@ body {
 }
 
 h1 {
-    font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     font-size: 5em;
     text-align: center;
@@ -28,20 +28,36 @@ h1 {
     box-sizing: inherit;
 }
 
+.hidden{
+  display: none;
+}
+.timerDiv{
+  font-family: monospace;
+  text-align: center;
+}
+
+.unselectable {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
 .webflow-style-input {
     font-family: 'Montserrat', sans-serif;
     margin: 3% auto;
     border-radius: 2px;
     padding: 1.4rem 2rem 1.6rem;
-    background: #000000;
+    background: #000;
 }
-
-.webflow-style-input input {
+ input {
+    padding: 1%;
     border-style: none;
-    background: transparent;
+    background: #000;
     width: 100%;
     outline: none;
-    color: #fff;
+    color: #eee;
     line-height: 2.4rem;
     vertical-align: middle;
     text-align: center;

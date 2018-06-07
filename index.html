@@ -5,14 +5,21 @@
 	<meta charset="utf-8"/>
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=OverpassMono:700" />
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:700" />
 	<link href="style.css" type="text/css" rel="stylesheet"/>
 	<link href="clock.css" type="text/css" rel="stylesheet"/>
   <link rel="icon" href="favicon.ico" type="image/x-icon">
 </head>
   <body>
-			<h1>Moin.</h1>
+		<div id="timerDiv" class="hidden">
+			<input type="number" min="1" max="9000" id="inputTimeMin" placeholder="min">
+			<input type="number" min="1" max="9000" id="inputTimeSec" placeholder="sec">
+			<input value="start" type="submit" onclick="toggleTimer()" id="startStop">
+		</div>
+
+			<h1 class="unselectable">
+				Moin<span id="point"   onclick="toggleShow()">.</span>
+			</h1>
 			<div class="webflow-style-input">
 			<form method="" action="https://duckduckgo.com">
 				<input type="text" name="q" id ="search" list="datalist1" autofocus placeholder="Search..."> <br>
@@ -96,8 +103,10 @@
 				    </ul>
 				  </div>
 				</div>
+
   </body>
 	<script src="message.js"></script>
 	<script src="clock.js"></script>
 	<script src="bg.js"></script>
+	<script src="hidden.js"></script>
 </html>
