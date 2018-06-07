@@ -32,6 +32,7 @@ h1 {
   display: none;
 }
 .timerDiv{
+  font-family: monospace;
   text-align: center;
 }
 
@@ -50,13 +51,13 @@ h1 {
     padding: 1.4rem 2rem 1.6rem;
     background: #000;
 }
-
  input {
+    padding: 1%;
     border-style: none;
     background: #000;
     width: 100%;
     outline: none;
-    color: #fff;
+    color: #eee;
     line-height: 2.4rem;
     vertical-align: middle;
     text-align: center;
