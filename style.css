@@ -9,6 +9,7 @@ html {
 }
 
 body {
+    font-family: 'Montserrat', sans-serif;
     height: 100%;
     color: #ccc7c7;
     background: #252525;
@@ -16,7 +17,6 @@ body {
 }
 
 h1 {
-    font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     font-size: 5em;
     text-align: center;
@@ -30,6 +30,9 @@ h1 {
 
 .hidden{
   display: none;
+}
+.timerDiv{
+  text-align: center;
 }
 
 .unselectable {
@@ -45,12 +48,12 @@ h1 {
     margin: 3% auto;
     border-radius: 2px;
     padding: 1.4rem 2rem 1.6rem;
-    background: #000000;
+    background: #000;
 }
 
-.webflow-style-input input {
+ input {
     border-style: none;
-    background: transparent;
+    background: #000;
     width: 100%;
     outline: none;
     color: #fff;
