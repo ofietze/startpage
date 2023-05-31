@@ -19,9 +19,12 @@ const COMMANDS = {
     url: "https://www.amazon.de",
   },
   d: {
-    name: "Dribbble",
-    searchTemplate: "/search/{}",
-    url: "https://dribbble.com/shots/popular",
+    name: "Discord",
+    suggestions: [
+      "o/channels/803833399684628520",
+      "o/channels/830183651022471199",
+    ],
+    url: "https://discord.com/channels/@me",
   },
   f: {
     name: "Figma",
@@ -48,18 +51,15 @@ const COMMANDS = {
     name: "Notion",
     url: "https://www.notion.so",
   },
-  o: {
-    name: "Discord",
-    suggestions: [
-      "o/channels/803833399684628520",
-      "o/channels/830183651022471199",
-    ],
-    url: "https://discord.com/channels/@me",
-  },
   r: {
     name: "Reddit",
     searchTemplate: "/search?q={}",
-    suggestions: ["r/r/startpages", "r/r/webdev", "r/r/onebag", "r/r/fujix"],
+    suggestions: [
+      "r/r/startpages",
+      "r/r/anarchychess",
+      "r/r/formuladank",
+      "r/r/aita",
+    ],
     url: "https://www.reddit.com",
   },
   s: {
@@ -76,7 +76,7 @@ const COMMANDS = {
   y: {
     name: "YouTube",
     searchTemplate: "/results?search_query={}",
-    suggestions: ["y/feed/trending"],
-    url: "https://youtube.com/feed/subscriptions",
+    suggestions: ["y/feed/trending", "y/feed/subscriptions"],
+    url: "https://youtube.com/",
   },
 };
