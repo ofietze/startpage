@@ -4,26 +4,7 @@
   --color-text: #eee;
   --font-family: -apple-system, BlinkMacSystemFont, Helvetica Neue, Helvetica,
     Ubuntu, Roboto, Noto, Segoe UI, Arial, sans-serif;
-  --font-size-1: 1rem;
-  --font-size-2: 3rem;
-  --font-size-base: 110%;
-  --font-weight-bold: 700;
-  --font-weight-normal: 400;
-  --line-height-base: 1.4;
-  --space-1: 1rem;
-  --space-2: 2rem;
-  --space-3: 4rem;
-  --transition-speed: 200ms;
 }
-
-@media (prefers-color-scheme: light) {
-  :root {
-    --color-background: #eee;
-    --color-text-subtle: #777;
-    --color-text: #111;
-  }
-}
-
 html {
   background-color: var(--color-background);
   color: var(--color-text);
@@ -35,14 +16,37 @@ html {
 body {
   margin: 0;
   font-family: "Montserrat", sans-serif;
+  font-size: 7.5rem;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
 }
+
+div {
+  font-size: 3rem;
+  padding: 1rem;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-evenly;
+}
+
 span {
   font-size: 8rem;
   width: 100%;
   text-align: center;
 }
 
-canvas {
-  width: 40%;
-  height: 40%;
+input {
+  height: 10rem;
+  background: var(--color-background);
+  border: 1px transparent;
+  outline: none;
+  padding: 1rem;
+  font-size: 5rem;
+  text-align: center;
 }
