@@ -2,15 +2,10 @@
   --color-background: #111;
   --color-text-subtle: #999;
   --color-text: #eee;
-  --font-family: -apple-system, BlinkMacSystemFont, Helvetica Neue, Helvetica,
-    Ubuntu, Roboto, Noto, Segoe UI, Arial, sans-serif;
 }
 html {
   background-color: var(--color-background);
   color: var(--color-text);
-  font-family: var(--font-family);
-  font-size: var(--font-size-base);
-  line-height: var(--line-height-base);
 }
 
 body {
@@ -20,12 +15,12 @@ body {
 
 .flex {
   display: flex;
-  margin-left: 0.5rem;
   justify-content: flex-end;
 }
 
 .number {
   font-size: 5rem;
+  margin: 0 0.5rem;
 }
 
 .title {
@@ -43,6 +38,7 @@ input {
   outline: none;
   padding: 1rem;
   font-size: 8rem;
+  font-family: "Montserrat", sans-serif;
   width: 100%;
 }
 
