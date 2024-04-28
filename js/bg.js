@@ -8,7 +8,7 @@ function idealTextColor(bgColor) {
   var bgDelta =
     components.R * 0.299 + components.G * 0.587 + components.B * 0.114;
 
-  return 255 - bgDelta < nThreshold ? "#333333" : "#ffffff";
+  return 255 - bgDelta < nThreshold ? "#333" : "#eee";
 }
 
 function getRGBComponents(color) {
@@ -317,6 +317,7 @@ var selectRandMaterialHex =
 var color = selectRandMaterialHex.toString(16);
 
 document.getElementById("moin").style.setProperty("--color-background", color);
+document.getElementById("days").style.setProperty("--color-background", color);
 document
   .getElementById("moin")
   .style.setProperty("--color-text", idealTextColor(color));
