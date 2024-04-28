@@ -16,22 +16,12 @@ html {
 body {
   margin: 0;
   font-family: "Montserrat", sans-serif;
-  font-size: 7.5rem;
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-}
-
-div {
-  display: flex;
-  flex-direction: row;
-  width: 100%;
 }
 
 .flex {
   display: flex;
   margin-left: 0.5rem;
-  justify-content: space-evenly;
+  justify-content: flex-end;
 }
 
 .number {
@@ -39,7 +29,8 @@ div {
 }
 
 .title {
-  margin-top: 1rem;
+  margin-top: 3rem;
+  margin-left: 0.5rem;
   font-size: 2rem;
   color: var(--color-text-subtle);
 }
@@ -48,13 +39,14 @@ input {
   height: 10rem;
   background: var(--color-background);
   border: 1px transparent;
+  border-radius: 1rem;
   outline: none;
   padding: 1rem;
   font-size: 8rem;
-  font-family: "Montserrat";
+  width: 100%;
 }
 
 ::placeholder {
-  color: white;
+  color: var(--color-text);
   opacity: 1; /* Firefox */
 }

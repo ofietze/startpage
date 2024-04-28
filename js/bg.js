@@ -316,5 +316,7 @@ var selectRandMaterialHex =
   ];
 var color = selectRandMaterialHex.toString(16);
 
-document.getElementById("moin").style =
-  "background:" + color + "; color:" + idealTextColor(color) + ";";
+document.getElementById("moin").style.setProperty("--color-background", color);
+document
+  .getElementById("moin")
+  .style.setProperty("--color-text", idealTextColor(color));
